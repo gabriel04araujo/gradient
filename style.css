@@ -1,0 +1,25 @@
+
+#back {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preview {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.container {
+    width: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px;
+}

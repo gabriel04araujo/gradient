@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="back">
+    <div class="container">
+        <h1>Gradient Generator</h1>
+
+        <label for="color1">Qual a primeira cor: </label>
+        <input id="color1" class="edit color-choice" type="color">
+        <br>
+
+        <label for="color2">Qual a segunda cor:</label>
+        <input id="color2" class="edit color-choice" type="color">
+        <br>
+
+        <label for="range">Qual o ângulo: </label>
+        <input id="range" type="range" class="edit"> <span id="angle">90°</span>
+        <br>
+
+        <div id="preview"></div>
+
+        <p id="css-display">linear-gradient(90deg, #000000, #ffffff)</p>
+
+        <button id="btn">Copiar CSS</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
