@@ -23,17 +23,24 @@ function generateGradient(col1, col2, angle) {
     return property;
 };
 
-
 function updateGradient() {
     let values = getValues();
     let gradient = generateGradient(values.color1, values.color2, values.angle);
 
     document.getElementById('preview').style.background = gradient;
     document.getElementById('back').style.background = gradient;
-    document.getElementById('angle').textContent = values.angle;
+    document.getElementById('angle').textContent = `${values.angle}°`;
     document.getElementById('css-display').textContent = gradient;
+};
+
+function copyText() {
+    let text = cssDisplay.textContent;
+    let copied = navigator.clipboard.writeText(text);
+    return copied;
 };
 
 inputs.forEach(function(input) {
     input.addEventListener("input", updateGradient);
 });
+
+btn.addEventListener("click", copyText);
