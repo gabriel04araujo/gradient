@@ -8,7 +8,7 @@
 </head>
 <body id="back">
     <div class="container">
-        <h1>Gradient Generator</h1>
+        <h1 id="title">Gradient Generator</h1>
 
         <label for="color1">Qual a primeira cor: </label>
         <input id="color1" class="edit color-choice" type="color">
@@ -19,7 +19,7 @@
         <br>
 
         <label for="range">Qual o ângulo: </label>
-        <input id="range" type="range" class="edit"> <span id="angle">90°</span>
+        <input id="range" type="range" class="edit" min="0" max="360"> <span id="angle">90°</span>
         <br>
 
         <div id="preview"></div>
